@@ -14,7 +14,7 @@
 }
 
 .container_login article:first-child section:first-child svg {
-    width: 40px;
+    width: 30px;
     stroke: #0D1B2A;
 }
 
@@ -85,9 +85,16 @@
     top: 0;
     right: 7px;
     height: 100%;
-    display: flex;
     justify-content: center;
 }
+
+.hidden_eye {
+   display: none;
+}
+.view_eye{
+    display: flex;
+}
+
 .inputGroup .icon_password button {
     border: none;
     background:transparent;
@@ -133,4 +140,8 @@
     box-shadow: 0px 2px 4px #566372,
         0px 0px 6px white,
         inset -1px -1px 6px white;
+}
+
+.hidden_eye{
+    overflow: hidden;
 }
