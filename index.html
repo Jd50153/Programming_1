@@ -38,7 +38,7 @@
       <article
         class="container_sm_option_login flex-grow-1 d-flex flex-column justify-content-between"
       >
-        <section >
+        <section>
           <h1 class="text-center mx-auto fs-1">
             Emprese de desarrollo software
           </h1>
@@ -46,11 +46,261 @@
             Optimización de tareas y mejoras de productos digitales
           </p>
         </section>
-        <section  class="d-flex flex-column align-items-end">
-          <button type="button" class="btn"><a href="./pages/Login.html">Iniciar sesión</a></button>
+        <section class="d-flex flex-column align-items-end">
+          <button type="button" class="btn">
+            <a href="./pages/Login.html">Iniciar sesión</a>
+          </button>
           <p class="text-center">
-            ¿No tienes una cuenta? <a href="./pages/Resgister.html"><b>Registrate</b></a>
+            ¿No tienes una cuenta?
+            <a href="./pages/Resgister.html"><b>Registrate</b></a>
           </p>
+        </section>
+      </article>
+    </main>
+    <main class="container_pc">
+      <article>
+        <section class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </section>
+      </article>
+      <article>
+        <section></section>
+        <section id="container_login_app">
+          <h1>Iniciar sesión</h1>
+          <p>Bienvenido de vuelta a nuestra empresa de desarrollo</p>
+          <form class="d-flex flex-column gap-2" action="">
+            <div class="inputGroup">
+              <input type="text" required="" autocomplete="off" />
+              <label for="name">Correo electrónico</label>
+            </div>
+            <div class="inputGroup">
+              <input type="password" required="" autocomplete="off" />
+              <label for="name">Contraseña</label>
+              <div id="icon_eye_hidden" class="icon_password hidden_eye">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#9b9b9b"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div id="icon_eye_view" class="icon_password">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#9b9b9b"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button type="button" class="btn btn_login_pc">
+              <a href="">Iniciar sesión</a>
+            </button>
+            <button type="button" class="btn btn_login_pc_google">
+              <img src="./assets/icons/icon_google.png" alt="" />
+            </button>
+            <p class="text-center mt-4">
+              ¿No tienes una cuenta?
+              <a id="btn_login_app_pc"><b>Registrate</b></a>
+            </p>
+          </form>
+        </section>
+        <section id="container_register_app" class="hidden_register">
+          <h1>Registrarse</h1>
+          <p>Comienza con tu proyecto y mejora tus productos digitales</p>
+          <form class="d-flex flex-column gap-2" action="">
+            <div>
+              <label for="choose_photo_input" id="choose_photo_label">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#9b9b9b"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </label>
+              <input id="choose_photo_input" type="file" />
+            </div>
+            <div class="inputGroup">
+              <input type="text" required="" autocomplete="off" />
+              <label for="name">Nombre completo</label>
+            </div>
+            <div class="inputGroup">
+              <input type="text" required="" autocomplete="off" />
+              <label for="name">N° de indentificación</label>
+            </div>
+            <div class="inputGroup">
+              <input type="text" required="" autocomplete="off" />
+              <label for="name">Teléfono</label>
+            </div>
+            <div class="inputGroup">
+              <input type="text" required="" autocomplete="off" />
+              <label for="name">Correo electrónico</label>
+            </div>
+            <div class="inputGroup">
+              <input type="password" required="" autocomplete="off" />
+              <label for="name">Contraseña</label>
+              <div id="icon_eye_hidden" class="icon_password hidden_eye">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#9b9b9b"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div id="icon_eye_view" class="icon_password">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#9b9b9b"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="inputGroup inputGroup_password_confirm">
+              <input
+                type="password"
+                class="input_password_confirm"
+                required=""
+                autocomplete="off"
+              />
+              <label for="name">Confirmar contraseña</label>
+              <div
+                id="icon_eye_hidden_confirm"
+                class="icon_password hidden_eye"
+              >
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#9b9b9b"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div id="icon_eye_view_confirm" class="icon_password">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#9b9b9b"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button type="button" class="btn btn_login_pc">
+              <a href="">Registrarse</a>
+            </button>
+            <button type="button" class="btn btn_login_pc_google">
+              <img src="./assets/icons/icon_google.png" alt="" />
+            </button>
+            <p class="text-center mt-4">
+              ¿Ya tienes una cuenta?
+              <a id="btn_login_app_pc"><b id="text_log_in_register">Inicia sesion</b></a>
+            </p>
+          </form>
+        </section>
+        <section class="last_section_email">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 icon_email"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+          <p>juli.matias.2004@gmail.com</p>
         </section>
       </article>
     </main>
@@ -63,18 +313,3 @@
     ></script>
   </body>
 </html>
-
-<!-- <section class="col swiper mySwiper 1">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </section> -->

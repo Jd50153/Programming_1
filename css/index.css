@@ -1,6 +1,6 @@
 :root {
     --text-color-h1: #0D1B2A;
-    --text-color-p:#1B263B
+    --text-color-p: #1B263B
 }
 
 * {
@@ -10,6 +10,7 @@
 .container_app {
     height: 100dvh;
     background-color: white;
+    display: none;
 }
 
 article.container_sm_image {
@@ -29,22 +30,26 @@ article.container_sm_option_login {
     margin-top: 80px;
     padding: 0 9px;
 }
-article.container_sm_option_login section{
+
+article.container_sm_option_login section {
     padding: 0 15px;
 }
-article.container_sm_option_login section:last-child{
+
+article.container_sm_option_login section:last-child {
     padding-bottom: 20px;
 }
-article.container_sm_option_login section:last-child p{
+
+article.container_sm_option_login section:last-child p {
     font-size: 14px;
     width: 100%;
 }
-article.container_sm_option_login section:last-child p>a{
+
+article.container_sm_option_login section:last-child p>a {
     color: #778DA9;
-    
+
 }
 
-article.container_sm_option_login section:last-child button{
+article.container_sm_option_login section:last-child button {
     width: 100%;
     background: #778DA9;
     color: white;
@@ -52,12 +57,13 @@ article.container_sm_option_login section:last-child button{
     height: 45px;
     border: 0;
 }
-article.container_sm_option_login section:last-child button>a{
+
+article.container_sm_option_login section:last-child button>a {
     color: white;
     text-decoration: none;
 }
 
-article.container_sm_option_login section:last-child button:active{
+article.container_sm_option_login section:last-child button:active {
     background-color: #859dbd;
     color: white;
 }
@@ -74,7 +80,7 @@ article.container_sm_option_login p {
     font-size: 15px;
     margin-top: 60px;
     color: var(--text-color-p);
-   
+
 }
 
 
@@ -87,6 +93,36 @@ article.container_sm_option_login p {
     align-items: center;
 }
 
+section.mySwiper .swiper-slide img {
+    object-fit: cover;
+}
+
+section.mySwiper .swiper-wrapper .swiper-slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.mySwiper .swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url("../assets/illustrations/img_slide_1.jpg");
+}
+
+section.mySwiper .swiper-wrapper .swiper-slide:nth-child(2) {
+    background-image: url("../assets/illustrations/img_slide_2.jpg");
+}
+
+section.mySwiper .swiper-wrapper .swiper-slide:nth-child(3) {
+    background-image: url("../assets/illustrations/img_slide_3.jpg");
+}
+
+section.mySwiper .swiper-wrapper .swiper-slide:nth-child(4) {
+    background-image: url("../assets/illustrations/img_slide_4.jpg");
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffffff;
+}
+
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -94,3 +130,262 @@ article.container_sm_option_login p {
     object-fit: cover;
 }
 
+.container_pc {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    article.container_sm_option_login section:last-child button {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .container_app {
+        display: none !important;
+    }
+
+    .container_pc {
+        display: flex;
+        height: 100dvh;
+        width: 100%;
+    }
+
+    .container_pc article {
+        width: 50%;
+    }
+
+    .container_pc article:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: auto;
+        padding-top: 60px;
+    }
+
+    .container_pc article:first-child section {
+        height: 100%;
+    }
+
+    .container_pc article:last-child section:nth-child(2) {
+        padding: 0 50px;
+        width: 100%;
+    }
+
+    .container_pc article:last-child section.last_section_email {
+        padding: 20px 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container_pc article:last-child .icon_email {
+        width: 20px;
+        height: 20px;
+        stroke: #797979;
+    }
+
+    .container_pc article:last-child section.last_section_email p {
+        margin-bottom: 0;
+        color: #797979;
+    }
+
+    .container_pc article:last-child section:nth-child(3) form {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .container_pc article:last-child section:nth-child(2) form {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .container_pc article:last-child section:nth-child(2) h1,
+    .container_pc article:last-child section:nth-child(2) p {
+        text-align: center;
+    }
+
+    .container_pc article:last-child section:nth-child(3) h1,
+    .container_pc article:last-child section:nth-child(3) p {
+        text-align: center;
+    }
+
+    .container_pc article:last-child section:nth-child(2) form p:last-child a {
+        color: #859dbd;
+    }
+
+    .container_pc article:last-child button:active {
+        background-color: #859dbd;
+        color: white;
+    }
+
+    .inputGroup {
+        margin: 10px 0;
+        position: relative;
+        width: 100%;
+        position: relative;
+    }
+
+    .inputGroup .icon_password {
+        position: absolute;
+        width: 30px;
+        top: 0;
+        right: 7px;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .hidden_eye {
+        display: none;
+    }
+
+    .view_eye {
+        display: flex;
+    }
+
+    .inputGroup .icon_password button {
+        border: none;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+    }
+
+    .inputGroup input {
+        font-size: 100%;
+        outline: none;
+        border: 2px solid #778DA9;
+        background-color: transparent;
+        border-radius: 8px;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+
+    }
+
+    .inputGroup label {
+        font-size: 100%;
+        position: absolute;
+        left: 0;
+        padding: 0.8em;
+        margin-left: 0.5em;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        color: #5c6975;
+    }
+
+    .inputGroup :is(input:focus, input:valid)~label {
+        transform: translateY(-50%) scale(.9);
+        margin: 0em;
+        margin-left: 1.3em;
+        padding: 0.4em;
+        background-color: white;
+        color: #778DA9;
+        font-weight: bold;
+    }
+
+    .inputGroup :is(input:focus, input:valid) {
+        border-color: #778DA9;
+        box-shadow: 0px 2px 4px #566372,
+            0px 0px 6px white,
+            inset -1px -1px 6px white;
+    }
+
+    .container_pc article:last-child .btn_login_pc {
+        width: 100%;
+        background: #778DA9;
+        color: white;
+        height: 45px;
+        border: 0;
+    }
+
+    .container_pc article:last-child .btn_login_pc_google {
+        width: 100%;
+        background: white;
+        color: white;
+        height: 45px;
+        border: 0;
+        border: 1px solid var(--text-color-h1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .container_pc article:last-child .btn_login_pc_google img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container_pc article:last-child .btn_login_pc_google>a {
+        color: #0D1B2A;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .container_pc article:last-child .btn_login_pc>a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .container_pc article:last-child .btn_login_pc:active {
+        background-color: #859dbd;
+        color: white;
+    }
+
+    .container_pc article:last-child section:nth-child(3) form div:first-child {
+        margin-top: 10px;
+    }
+
+    .container_pc article:last-child section:nth-child(3) form div:first-child>input[type="file"] {
+        display: none;
+    }
+
+    .container_pc article:last-child section:nth-child(3) form div:first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_pc article:last-child section:nth-child(3) form div:first-child>label {
+        background: #d8d8d8;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+    }
+
+    .container_pc article:last-child section:nth-child(3) form div:first-child>label>svg {
+        width: 30px;
+    }
+
+    .hidden_register {
+        display: none;
+    }
+
+    #container_register_app {
+        animation: translateX .3s ease;
+    }
+    #text_log_in_register{
+        color:#778DA9 ;
+    }
+    .flagClassLogin{
+        animation: translateXRegister .3s ease;
+
+    }
+
+
+}
+
+@keyframes translateX {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+@keyframes translateXRegister {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
