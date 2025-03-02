@@ -44,6 +44,7 @@
     border-radius: 10px;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 .container_login article:first-child section:nth-child(3) form div:first-child > label > svg {
     width: 30px;
